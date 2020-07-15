@@ -6,17 +6,20 @@ export default class extends React.Component {
         nowPlaying:null,
         upcoming:null,
         popular:null,
+        error: null,
+        loading: true
     };
 
     render (){
-        const { nowPlaying, upcoming, popular} = this.state;
+        const { nowPlaying, upcoming, popular , error , loading} = this.state;
         return (
             <HomePresenter
                 nowPlaying = {nowPlaying}
                 upcoming = {upcoming}
                 popular = {popular}
+                error = {error}
+                loading = {loading}
             />
-        );
-                
+        );              
     }
 }

@@ -7,7 +7,7 @@ export default class extends React.Component {
         tvResults: null,
         searchTerm: "",
         error: null,
-        loading: true,
+        loading: false,
     }
     render (){
         const { movieResults, tvResults, searchTerm, error, loading} = this.state;
